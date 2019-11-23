@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3a925ad-f62a-4fe1-b551-1cdb06610e09" name="Default Changelist" comment="" />
+    <list default="true" id="e3a925ad-f62a-4fe1-b551-1cdb06610e09" name="Default Changelist" comment="added h-work lesson2 &amp; lesson 3">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Controller.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Database.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson2/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson3/WeakReferances.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Picsart/META-INF/Picsart.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Picsart/META-INF/Picsart.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson1/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Picsart/lesson1/Console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson1/ControllerKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Picsart/lesson1/ControllerKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson1/GameKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson1/Console.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Console.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson1/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Controller.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson1/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Game.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson1/Level.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Level.kt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,12 +29,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Enum" />
-        <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Te2BARMi7NkyLxNvBGvwgwyPlA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\RUBEN\IdeaProjects\Picsart\src\lesson3" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="lesson3" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -30,37 +63,99 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.lesson1.GameKt">
-    <configuration name="JavaClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson1.JavaClass" />
+  <component name="RunManager" selected="Kotlin.lesson3.WeakReferancesKt">
+    <configuration name="lesson1.GameKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Picsart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lesson2.Database.kt" />
+      <option name="WORKING_DIRECTORY" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lesson1.GameKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="lesson2.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Picsart" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lesson2.MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lesson2.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Picsart" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="lesson1.GameKt" />
+      <option name="MAIN_CLASS_NAME" value="lesson2.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lesson2.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Picsart" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lesson2.MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lesson2.WeakReferancesKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Picsart" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lesson2.WeakReferancesKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lesson3.WeakReferancesKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Picsart" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lesson3.WeakReferancesKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Kotlin.lesson1.GameKt" />
+      <item itemvalue="Kotlin.lesson2.MainKt" />
+      <item itemvalue="Kotlin.lesson2.WeakReferancesKt" />
+      <item itemvalue="Kotlin.lesson2.MainKt" />
+      <item itemvalue="Kotlin.lesson3.WeakReferancesKt" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.lesson1.GameKt" />
-        <item itemvalue="Application.JavaClass" />
+        <item itemvalue="Kotlin.lesson3.WeakReferancesKt" />
+        <item itemvalue="Kotlin.lesson2.MainKt" />
+        <item itemvalue="Kotlin.lesson2.WeakReferancesKt" />
+        <item itemvalue="Kotlin.lesson2.MainKt" />
+        <item itemvalue="Kotlin.lesson2.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -76,5 +171,18 @@
       <updated>1573806102718</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

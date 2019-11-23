@@ -54,8 +54,3 @@ object Console {
         return guessNumber
     }
 }
-
-
-
-
-

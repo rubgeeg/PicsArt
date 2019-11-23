@@ -63,10 +63,7 @@ fun startGame() {
     if (!isGuessed) {
         startGame()
     }
-
-
 }
 fun getRandomNumber(): Int {
     return (0..100).random()
 }
-
