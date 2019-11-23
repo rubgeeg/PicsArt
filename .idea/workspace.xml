@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3a925ad-f62a-4fe1-b551-1cdb06610e09" name="Default Changelist" comment="added h-work lesson2 &amp; lesson 3">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson2/Controller.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson2/Database.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson2/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson2/User.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson3/WeakReferances.kt" afterDir="false" />
+    <list default="true" id="e3a925ad-f62a-4fe1-b551-1cdb06610e09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Picsart/META-INF/Picsart.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Picsart/META-INF/Picsart.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson1/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Picsart/lesson1/Console.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson1/ControllerKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Picsart/lesson1/ControllerKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson1/GameKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Console.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Console.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Controller.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Game.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Level.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Level.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +21,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Te2BARMi7NkyLxNvBGvwgwyPlA" />
@@ -144,7 +135,6 @@
     </configuration>
     <list>
       <item itemvalue="Kotlin.lesson1.GameKt" />
-      <item itemvalue="Kotlin.lesson2.MainKt" />
       <item itemvalue="Kotlin.lesson2.WeakReferancesKt" />
       <item itemvalue="Kotlin.lesson2.MainKt" />
       <item itemvalue="Kotlin.lesson3.WeakReferancesKt" />
@@ -170,6 +160,21 @@
       <option name="presentableId" value="Default" />
       <updated>1573806102718</updated>
     </task>
+    <task id="LOCAL-00001" summary="added h-work lesson2 &amp; lesson 3">
+      <created>1574515882075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574515882075</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added h-work lesson2 &amp; lesson 3">
+      <created>1574515928760</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574515928760</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,5 +189,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added h-work lesson2 &amp; lesson 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="added h-work lesson2 &amp; lesson 3" />
   </component>
 </project>
