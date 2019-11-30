@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3a925ad-f62a-4fe1-b551-1cdb06610e09" name="Default Changelist" comment="">
+    <list default="true" id="e3a925ad-f62a-4fe1-b551-1cdb06610e09" name="Default Changelist" comment="added h-work lesson4">
+      <change afterPath="$PROJECT_DIR$/src/lesson4/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson4/GetType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson4/Task1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson4/Task2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson4/Task3.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Picsart/META-INF/Picsart.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Picsart/META-INF/Picsart.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson3/DelegateWeekRefProp$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson3/DelegateWeekRefProp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Picsart/lesson3/DelegateWeekRefProp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson3/WeakReferancesKt$main$a$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Picsart/lesson3/WeakReferancesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Picsart/lesson3/WeakReferancesKt.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,9 +23,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Enum" />
         <option value="Class" />
         <option value="Kotlin Interface" />
+        <option value="Enum" />
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Object" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -29,11 +41,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="GetType" />
+      <recent name="lesson4" />
+      <recent name="lesson3" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\RUBEN\IdeaProjects\Picsart\src\lesson3" />
-    </key>
-    <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="lesson3" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -48,20 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.lesson3.WeakReferancesKt">
-    <configuration name="lesson1.GameKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="Picsart" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="lesson2.Database.kt" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.lesson4.Task3Kt">
     <configuration name="lesson2.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Picsart" />
       <option name="VM_PARAMETERS" value="" />
@@ -96,19 +97,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="lesson2.MainKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lesson2.WeakReferancesKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="Picsart" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="lesson2.WeakReferancesKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,18 +115,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lesson4.Task1Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Picsart" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lesson4.Task1Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lesson4.Task3Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Picsart" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lesson4.Task3Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.DelegateKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Picsart" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="test.DelegateKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Kotlin.lesson1.GameKt" />
-      <item itemvalue="Kotlin.lesson2.WeakReferancesKt" />
       <item itemvalue="Kotlin.lesson2.MainKt" />
       <item itemvalue="Kotlin.lesson3.WeakReferancesKt" />
+      <item itemvalue="Kotlin.test.DelegateKt" />
+      <item itemvalue="Kotlin.lesson4.Task3Kt" />
+      <item itemvalue="Kotlin.lesson4.Task1Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.lesson4.Task3Kt" />
+        <item itemvalue="Kotlin.lesson4.Task1Kt" />
+        <item itemvalue="Kotlin.test.DelegateKt" />
         <item itemvalue="Kotlin.lesson3.WeakReferancesKt" />
-        <item itemvalue="Kotlin.lesson2.MainKt" />
-        <item itemvalue="Kotlin.lesson2.WeakReferancesKt" />
-        <item itemvalue="Kotlin.lesson2.MainKt" />
         <item itemvalue="Kotlin.lesson2.MainKt" />
       </list>
     </recent_temporary>
@@ -193,6 +221,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added h-work lesson2 &amp; lesson 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="added h-work lesson2 &amp; lesson 3" />
+    <MESSAGE value="added h-work lesson4" />
+    <option name="LAST_COMMIT_MESSAGE" value="added h-work lesson4" />
   </component>
 </project>
