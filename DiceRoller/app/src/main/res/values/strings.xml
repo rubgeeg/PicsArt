@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Rubens DiceRoller</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_reset">Reset</string>
+    <string name="roll_button">Roll</string>
+    <string name="menu_home">Home</string>
+    <string name="player_name">Player1</string>
+    <string name="check_button">Check</string>
+    <string name="task1_tview">Type smth...</string>
+
+</resources>
