@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorRed">#F44336</color>
+    <color name="colorRedTrans">#FFEBEE</color>
+    <color name="colorGreen">#388E3C</color>
+    <color name="colorGreenTrans">#5966BB6A</color>
+    <color name="colorLightGray">#80ACACAC</color>
+    <color name="colorGray">#80383838</color>
+    <color name="colorGradient1">#78D378</color>
+    <color name="colorGradient2">#FFA7A0</color>
+    <array name="gradientColors">
+        <item>#F44336</item>
+        <item>#78D378</item>
+        <item>#FFA7A0</item>
+        <item>#388E3C</item>
+    </array>
+</resources>
