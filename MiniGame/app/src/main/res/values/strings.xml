@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rubens Mini Game</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="start">Start</string>
+    <string name="guess_number_textviewr">Guess the number</string>
+    <string name="new_game_button">New game</string>
+    <string name="social_share_button">Share</string>
+</resources>
