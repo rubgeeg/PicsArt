@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.theguardian.models.Result" />
+
+        <variable
+            name="clicks"
+            type="com.theguardian.utils.BaseListAdapter.OnListItemClickListener&lt;com.theguardian.models.Result>" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:onClick="@{v -> clicks.onItemClick(v,data)}">
+        android:onClick="@{v -> clicks.onItemClick(v,data)}">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/news_featured_picture"
+            loadImageUrl="@{data.fields.thumbnail}"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/newsTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:ellipsize="end"
+            android:maxLength="55"
+            android:maxLines="2"
+            android:text="@{data.webTitle}"
+            android:textColor="#6B167A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/delete_button"
+            app:layout_constraintStart_toEndOf="@+id/news_featured_picture"
+            app:layout_constraintTop_toTopOf="@+id/news_featured_picture" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/likeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/like_image"
+            android:text="Liked"
+            app:layout_constraintBottom_toBottomOf="@id/news_featured_picture"
+            app:layout_constraintEnd_toEndOf="@+id/delete_button"
+            app:layout_constraintTop_toBottomOf="@+id/delete_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
