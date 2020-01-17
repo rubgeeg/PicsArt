@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -19,13 +20,14 @@ import com.theguardian.utils.AppDatabase
 import com.theguardian.utils.BaseFragment
 import com.theguardian.utils.BaseListAdapter
 
+
 class HomeFragment : BaseFragment(), BaseListAdapter.OnListItemClickListener<Result> {
 
-    lateinit var baseLiveData: NewsListLiveData
-    lateinit var binding: FragmentHomeBinding
-    lateinit var adapter: BaseListAdapter<Result>
+    private lateinit var baseLiveData: NewsListLiveData
+    private lateinit var binding: FragmentHomeBinding
+    private lateinit var adapter: BaseListAdapter<Result>
     var newsList: ArrayList<Result>? = null
-    lateinit var db: AppDatabase
+    private lateinit var db: AppDatabase
     var pageNum = 1
     var fetchingNews = false
 
@@ -37,10 +39,11 @@ class HomeFragment : BaseFragment(), BaseListAdapter.OnListItemClickListener<Res
         db = AppDatabase.getAppDatabase(activity!!)
         baseLiveData.baseData.observe(this, Observer {
             if (newsList == null) {
-                newsList = it.response.results
+
+                newsList = getNonDeletedList(it.response.results)
                 fillDataIntoList()
             } else {
-                newsList?.addAll(it.response.results)
+                newsList?.addAll(getNonDeletedList(it.response.results))
                 adapter.notifyDataSetChanged()
             }
             db.responseDao().insertResults(it.response.results)
@@ -50,7 +53,7 @@ class HomeFragment : BaseFragment(), BaseListAdapter.OnListItemClickListener<Res
 
     private fun fillDataIntoList() {
         adapter =
-            BaseListAdapter<Result>(R.layout.layout_news_list_item)
+            BaseListAdapter<Result>(resLayoutID = R.layout.layout_news_list_item)
         adapter.onListItemClickListener = this
         adapter.submitList(newsList)
         binding.newsList.adapter = adapter
@@ -63,10 +66,11 @@ class HomeFragment : BaseFragment(), BaseListAdapter.OnListItemClickListener<Res
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
 
-        if (db.responseDao().getResults().size > 0) {
+        if (db.responseDao().getResults().isNotEmpty()) {
             newsList = java.util.ArrayList()
-            newsList?.addAll(db.responseDao().getResults())
-            pageNum = newsList?.size!! / 10
+            val newsDbList = db.responseDao().getResults()
+            newsList?.addAll(getNonDeletedList(newsDbList))
+            pageNum = newsDbList.size / 10
             fillDataIntoList()
         } else
             fetchNews()
@@ -84,15 +88,43 @@ class HomeFragment : BaseFragment(), BaseListAdapter.OnListItemClickListener<Res
         return binding.root
     }
 
+    private fun getNonDeletedList(list: List<Result>): ArrayList<Result> {
+        val nonDeleteList = ArrayList<Result>()
+        list.forEachIndexed { _, result ->
+            if (!result.isDeleted)
+                nonDeleteList.add(result)
+        }
+        return nonDeleteList
+    }
+
     private fun fetchNews() {
         fetchingNews = true
         baseLiveData.searchNews(pageNum)
     }
 
     override fun onItemClick(view: View, itemData: Result) {
-        val bundle = bundleOf("id" to itemData.id)
-        NavHostFragment.findNavController(this)
-            .navigate(R.id.action_homeFragment_to_articleDetailFragment, bundle)
+
+        when {
+            view.id == R.id.delete_button -> {
+                itemData.isDeleted = true
+                db.responseDao().updateResult(itemData)
+                newsList?.remove(itemData)
+                adapter.notifyDataSetChanged()
+                Toast.makeText(context, "Deleted", Toast.LENGTH_LONG).show()
+            }
+            view.id == R.id.likeTextView -> {
+                itemData.isLiked = !itemData.isLiked
+                db.responseDao().updateResult(itemData)
+                adapter.notifyDataSetChanged()
+            }
+            else -> {
+                val bundle = bundleOf("id" to itemData.id)
+                NavHostFragment.findNavController(this)
+                    .navigate(R.id.action_homeFragment_to_articleDetailFragment, bundle)
+            }
+        }
+
+
     }
 
 

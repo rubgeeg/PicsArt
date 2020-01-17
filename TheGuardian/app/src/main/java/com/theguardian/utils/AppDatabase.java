@@ -24,7 +24,7 @@ public abstract class AppDatabase extends RoomDatabase {
         if (INSTANCE == null) {
             INSTANCE =
                     Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class, "response-database")
-                            .allowMainThreadQueries() // Hayk M., is this good practise ?
+                            .allowMainThreadQueries()
                             .build();
         }
         return INSTANCE;

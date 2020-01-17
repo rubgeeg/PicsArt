@@ -1,9 +1,6 @@
 package com.theguardian.dao
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 import com.theguardian.models.Response
 import com.theguardian.models.Result
 
@@ -25,9 +22,15 @@ interface ResponseDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertResults(results: ArrayList<Result>)
 
+    @Update
+    fun updateResult(result: Result)
+
     @Insert
     fun insertResponses(results: ArrayList<Response>)
 
-//    @Query(en)
-//    fun
-}
+  //  @Query("SELECT * FROM result WHERE isLiked == :removed ")
+  //  fun getNotRemoved(removed:Boolean):List<Result>
+
+
+
+    }

@@ -43,5 +43,9 @@ data class Result(
     val webTitle: String?,
     @ColumnInfo(name = "webUrl")
     @SerializedName("webUrl")
-    val webUrl: String
+    val webUrl: String,
+    @ColumnInfo(name = "isDeleted")
+    var isDeleted: Boolean,
+    @ColumnInfo(name = "isLiked")
+    var isLiked: Boolean
 )

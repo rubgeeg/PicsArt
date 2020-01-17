@@ -35,4 +35,5 @@ data class Response(
     @ColumnInfo(name = "userTier")
     @SerializedName("userTier")
     val userTier: String
+
 )
